@@ -1,0 +1,57 @@
+{
+	"_comment": "Probably 10-ish total with duplicates",
+	"Land": {
+		"Basic": {
+			"Duplicates": 3,
+			"Buy_cost": 0,
+			"Play_cost": 0,
+			"Abilities": {
+				"Sap": {
+					"Cost": "Tap",
+					"Text": "Give host 1 mana"
+				}
+			}
+		}
+	},	"Creatures": {
+		"Slave": {
+			"Duplicates": 4,
+			"Buy_cost": 0,
+			"Play_cost": 0,
+			"Size": 1,
+			"Tax": 1,
+			"Abilities": {
+				"Sell": {
+					"Cost": "Tap",
+					"Target": "Player",
+					"Text": "Give host 1 gold. Immigrate to target player."
+				}
+			}
+		}
+	}, "Actions": {
+		"Express extortion": {
+			"Duplicates": 2,
+			"Buy_cost": 0,
+			"Play_cost": 0,
+			"Abilities": {
+				"Cast": {
+					"Target": "Untapped hosted creature",
+					"X": "Tax of target",
+					"Text": "Tap target. Give host X gold."
+				}
+			}
+		}
+	}, "Machines": {
+		"Garbage shute": {
+			"Duplicates": 1,
+			"Crew": ["1*"],
+			"Buy_cost": 0,
+			"Play_cost": 0,
+			"Abilities": {
+				"Horrible accident others need to learn from": {
+					"Target": "Card in hand",
+					"Text": "Exile target."
+				}
+			}
+		}
+	}
+}

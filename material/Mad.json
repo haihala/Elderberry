@@ -1,0 +1,71 @@
+{
+	"_comment": "Probably 10-ish total with duplicates",
+	"Creatures": {
+		"Wilbourg": {
+			"Duplicates": 1,
+			"Buy_cost": 3,
+			"Play_cost": 1,
+			"Size": 1,
+			"Tax": 2,
+			"Tribe": "Unique, Animal",
+			"Abilities": {
+				"To sausage you go": {
+					"Cost": "Sacrifice wilbourg.",
+					"Text": "Give host 3 gold. Feel horrible for murder."
+				}
+			}
+		},
+		"William Grommit": {
+			"Duplicates": 1,
+			"Buy_cost": 3,
+			"Play_cost": 1,
+			"Size": 2,
+			"Tax": 1,
+			"Tribe": "Unique, Brute, Soldier",
+			"Abilities": {
+				"Recry": {
+					"Target": "Creature you host.",
+					"Text": "If target has an effect for entering the battlefield, activate that effect."
+				}
+			}
+		}
+	}, "Actions": {
+
+	}, "Machines": {
+		"Trebuchet": {
+			"Duplicates": 3,
+			"Buy_cost": 5,
+			"Play_cost": 2,
+			"Crew": ["1*"],
+			"Abilities": {
+				"Lob": {
+					"Target": "Hosted creature",
+					"Text": "Immigrate target."
+				}
+			}
+		}
+	}, "Diseases": {
+		"Black plague": {
+			"Duplicates": 2,
+			"Buy_cost": 2,
+			"Play_cost": 1,
+			"Ability": {
+				"Manifest": {
+					"Trigger": "Start of host's turn",
+					"Text": "Kill parent creature."
+				}
+			}
+		},
+		"Pestilence": {
+			"Duplicates": 2,
+			"Buy_cost": 2,
+			"Play_cost": 1,
+			"Ability": {
+				"Manifest": {
+					"Trigger": "Start of host's turn",
+					"Text": "Deal 1 damage to all host's creatures."
+				}
+			}
+		}
+	}
+}

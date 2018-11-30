@@ -1,0 +1,70 @@
+{
+	"_comment": "Probably 10-ish total with duplicates",
+	"Creatures": {
+		"Door priest": {
+			"Duplicates": 2,
+			"Buy_cost": 3,
+			"Play_cost": 3,
+			"Size": 1,
+			"Tax": 0,
+			"Abilities": {
+				"Have you heard of our lord and saviour": {
+					"Text": "Buy the top card of the shop deck without paying the buy cost."
+				}
+			}
+		}
+	}, "Actions": {
+		"Natoronator": {
+			"Duplicates": 4,
+			"Buy_cost": 1,
+			"Play_cost": 0,
+			"Abilities": {
+				"Cast": {
+					"Target": "Any number of hosted machines",
+					"Text": "Combine all targets into a single machine. Crewed machines share crews."
+				}
+			}
+		}
+	}, "Machines": {
+
+	}, "Artifacts": {
+		"The lid": {
+			"Duplicates": 1,
+			"Buy_cost": 3,
+			"Play_cost": 1,
+			"Tribe": "unique",
+			"Abilities": {
+				"Grind": {
+					"Cost": "Tap",
+					"Text": "Gain 2 gold."
+				},
+				"Fabricate": {
+					"Trigger": "End of host's turn",
+					"Text": "Draw a card."
+				}
+			}
+		}
+
+	}, "Modules": {
+		"Extra power": {
+			"Duplicates": 2,
+			"Buy_cost": 6,
+			"Play_cost": 0,
+			"Abilities": {
+				"Cast": {
+					"Text": "Repeat parent effects for each action used this turn."
+				}
+			}
+		},
+		"Diffractor": {
+			"Duplicates": 2,
+			"Buy_cost": 1,
+			"Play_cost": 0,
+			"Abilities": {
+				"Cast": {
+					"Text": "Repeat parent effect for each legal target that wasn't selected as the target."
+				}
+			}
+		}
+	}
+}
